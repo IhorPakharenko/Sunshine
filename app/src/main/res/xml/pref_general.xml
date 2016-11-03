@@ -2,13 +2,35 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <EditTextPreference
-        android:defaultValue="@string/pref_location_default"
-        android:inputType="text"
-        android:key="@string/pref_location_key"
-        android:singleLine="true"
-        android:title="@string/pref_location_label">
+    <PreferenceCategory
+        android:key="pref_key_location_settings"
+        android:title="@string/pref_location_category_title">
 
-    </EditTextPreference>
+        <EditTextPreference
+            android:defaultValue="@string/pref_location_default"
+            android:inputType="text"
+            android:key="@string/pref_location_key"
+            android:singleLine="true"
+            android:title="@string/pref_location_label">
+
+        </EditTextPreference>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="pref_key_temp_settings"
+        android:title="Temperature">
+
+        <ListPreference
+            android:defaultValue="@string/pref_temp_units_default"
+            android:entries="@array/pref_temp_units_entries"
+            android:entryValues="@array/pref_temp_units_entry_values"
+            android:key="@string/pref_temp_units_key"
+            android:title="Temperature Units">
+
+        </ListPreference>
+
+    </PreferenceCategory>
+
 
 </PreferenceScreen>
