@@ -22,10 +22,10 @@
         android:title="Temperature">
 
         <ListPreference
-            android:defaultValue="@string/pref_temp_units_default"
-            android:entries="@array/pref_temp_units_entries"
-            android:entryValues="@array/pref_temp_units_entry_values"
-            android:key="@string/pref_temp_units_key"
+            android:defaultValue="@string/pref_units_default"
+            android:entries="@array/pref_units_entries"
+            android:entryValues="@array/pref_units_entry_values"
+            android:key="@string/pref_units_key"
             android:title="Temperature Units">
 
         </ListPreference>

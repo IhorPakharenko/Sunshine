@@ -213,10 +213,10 @@ public class ForecastFragment extends Fragment {
          */
         private String formatHighLows(double high, double low, String tempUnits) {
 
-            if (tempUnits.equals(getString(R.string.pref_temp_units_imperial))) {
+            if (tempUnits.equals(getString(R.string.pref_units_imperial))) {
                 high = (high * 1.8) + 32;
                 low = (low * 1.8) + 32;
-            } else if (!tempUnits.equals(getString(R.string.pref_temp_units_metric))) {
+            } else if (!tempUnits.equals(getString(R.string.pref_units_metric))) {
                 Log.d(LOG_TAG, "Unit type not found: " + tempUnits);
             }
 
@@ -286,8 +286,8 @@ public class ForecastFragment extends Fragment {
                 SharedPreferences sharedPreferences =
                         PreferenceManager.getDefaultSharedPreferences(getActivity());
                 String tempUnits = sharedPreferences.getString(
-                        getString(R.string.pref_temp_units_key),
-                        getString(R.string.pref_temp_units_default));
+                        getString(R.string.pref_units_key),
+                        getString(R.string.pref_units_default));
 
 
                 // Get the JSON object representing the day

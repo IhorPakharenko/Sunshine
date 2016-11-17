@@ -10,21 +10,21 @@
     <string name="pref_location_label">Location</string>
     <string name="pref_location_key" translatable="false">location</string>
     <string name="pref_location_default" translatable="false">94043</string>
-    <string name="pref_temp_units_key" translatable="false">units</string>
-    <string name="pref_temp_units_default">Metric</string>
-    <string name="pref_temp_units_metric">metric</string>
-    <string name="pref_temp_units_imperial">imperial</string>
+    <string name="pref_units_key" translatable="false">units</string>
+    <string name="pref_units_default">Metric</string>
+    <string name="pref_units_metric">metric</string>
+    <string name="pref_units_imperial">imperial</string>
     <string name="pref_location_category_title">Location</string>
     <string name="action_map" translatable="false">Map</string>
     <string name="action_share">Share</string>
 
-    <string-array name="pref_temp_units_entries">
+    <string-array name="pref_units_entries">
         <item>Metric</item>
         <item>Imperial</item>
     </string-array>
 
-    <string-array name="pref_temp_units_entry_values">
-        <item>@string/pref_temp_units_metric</item>
-        <item>@string/pref_temp_units_imperial</item>
+    <string-array name="pref_units_entry_values">
+        <item>@string/pref_units_metric</item>
+        <item>@string/pref_units_imperial</item>
     </string-array>
 </resources>
